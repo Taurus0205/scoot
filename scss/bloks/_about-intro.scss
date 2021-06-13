@@ -1,0 +1,49 @@
+.about-intro {
+}
+
+.about-intro .container {
+  padding: 72px 0px;
+  background-image: url(../images/about-intro-part/about-intro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.about-intro__heading {
+  @include marbot(0);
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #ffffff;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .about-intro .container {
+    background-image: url(../images/about-intro-part/about-intro@2x.jpg);
+  }
+}
+
+// adoptive
+
+@media only screen and (max-width: 780px) {
+  .about-intro .container {
+    padding: 72px 57px;
+  }
+}
+
+@media only screen and (max-width: 566px) {
+  .about-intro .container {
+    padding: 72px 0;
+  }
+
+  .about-intro__heading {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+}
