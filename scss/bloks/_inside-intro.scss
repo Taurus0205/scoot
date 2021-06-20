@@ -1,7 +1,7 @@
-.about-intro {
+.inside-intro {
 }
 
-.about-intro .container {
+.inside-intro .container {
   padding: 72px 0px;
   background-image: url(../images/about-intro-part/about-intro.jpg);
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
   background-position: right;
 }
 
-.about-intro__heading {
+.inside-intro__heading {
   @include marbot(0);
   font-size: 56px;
   line-height: 56px;
@@ -23,7 +23,7 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .about-intro .container {
+  .inside-intro .container {
     background-image: url(../images/about-intro-part/about-intro@2x.jpg);
   }
 }
@@ -31,17 +31,17 @@
 // adoptive
 
 @media only screen and (max-width: 780px) {
-  .about-intro .container {
+  .inside-intro .container {
     padding: 72px 57px;
   }
 }
 
 @media only screen and (max-width: 566px) {
-  .about-intro .container {
+  .inside-intro .container {
     padding: 72px 0;
   }
 
-  .about-intro__heading {
+  .inside-intro__heading {
     font-size: 40px;
     line-height: 40px;
     text-align: center;
